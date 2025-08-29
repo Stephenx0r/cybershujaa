@@ -1,0 +1,97 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.32.8'
+          channel: 'stable'
+      
+      - name: Install dependencies
+        run: |
+          flutter pub get
+          cd apps/admin && flutter pub get
+      
+      - name: Analyze project source
+        run: flutter analyze
+      
+      - name: Analyze admin app source
+        run: cd apps/admin && flutter analyze
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.32.8'
+          channel: 'stable'
+      
+      - name: Install dependencies
+        run: |
+          flutter pub get
+          cd apps/admin && flutter pub get
+      
+      - name: Run tests
+        run: flutter test
+      
+      - name: Run admin app tests
+        run: cd apps/admin && flutter test
+
+  build-mobile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.32.8'
+          channel: 'stable'
+      
+      - name: Install dependencies
+        run: flutter pub get
+      
+      - name: Build APK
+        run: flutter build apk --debug
+      
+      - name: Build iOS
+        run: flutter build ios --debug --no-codesign
+
+  build-admin:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.32.8'
+          channel: 'stable'
+      
+      - name: Install dependencies
+        run: |
+          cd apps/admin
+          flutter pub get
+      
+      - name: Build web
+        run: cd apps/admin && flutter build web --release
+      
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: admin-web-build
+          path: apps/admin/build/web/

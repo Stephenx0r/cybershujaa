@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "project_number": "92133913504",
+    "firebase_url": "https://cyberguard-d5f18-default-rtdb.firebaseio.com",
+    "project_id": "cyberguard-d5f18",
+    "storage_bucket": "cyberguard-d5f18.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:92133913504:android:9dc1c7bc63b68b11036ac5",
+        "android_client_info": {
+          "package_name": "com.example.cyberguard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "92133913504-29q6dn3gtsmjrsdg1vfchuglsn93cmbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAi1eW6L9udQXx3DOzhAN0F3YJT6IXfiE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "92133913504-29q6dn3gtsmjrsdg1vfchuglsn93cmbm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:92133913504:android:9e3993d9902c69ed036ac5",
+        "android_client_info": {
+          "package_name": "com.example.firstapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "92133913504-29q6dn3gtsmjrsdg1vfchuglsn93cmbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAi1eW6L9udQXx3DOzhAN0F3YJT6IXfiE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "92133913504-29q6dn3gtsmjrsdg1vfchuglsn93cmbm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:92133913504:android:b1a6b7737ceb109f036ac5",
+        "android_client_info": {
+          "package_name": "ke.cybershujaa.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "92133913504-29q6dn3gtsmjrsdg1vfchuglsn93cmbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAi1eW6L9udQXx3DOzhAN0F3YJT6IXfiE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "92133913504-29q6dn3gtsmjrsdg1vfchuglsn93cmbm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:92133913504:android:eef2ec00c370a93b036ac5",
+        "android_client_info": {
+          "package_name": "com.stephen.cyberguard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "92133913504-s3kcup6qdek5fcbehu26knovu6vjv6a0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.stephen.cyberguard",
+            "certificate_hash": "96391ebcf8dcd09f081dd8d1c655fc0f08304ba8"
+          }
+        },
+        {
+          "client_id": "92133913504-29q6dn3gtsmjrsdg1vfchuglsn93cmbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAi1eW6L9udQXx3DOzhAN0F3YJT6IXfiE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "92133913504-29q6dn3gtsmjrsdg1vfchuglsn93cmbm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
