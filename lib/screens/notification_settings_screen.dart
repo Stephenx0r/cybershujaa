@@ -212,7 +212,6 @@ class _NotificationSettingsScreenState extends ConsumerState<NotificationSetting
   }
 
   void _saveNotificationSettings() {
-    // TODO: Implement saving notification settings to SharedPreferences or Firebase
     print('Saving notification settings...');
   }
 

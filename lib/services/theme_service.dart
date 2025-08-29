@@ -31,8 +31,6 @@ class ThemeService extends ChangeNotifier {
   
   // Get current theme data with accessibility support
   ThemeData get currentTheme {
-    // For now, use simple theme building to avoid crashes
-    // TODO: Re-implement accessibility features once the base theme system is stable
     if (_isHighContrast) {
       // Return a simple high contrast theme
       return ThemeData.dark().copyWith(

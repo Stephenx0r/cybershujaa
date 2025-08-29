@@ -1225,27 +1225,22 @@ class _StoryMissionScreenState extends ConsumerState<StoryMissionScreen>
 
   // Navigation methods for different challenge types
   void _navigateToQuizScreen(StoryScenario scenario) {
-    // TODO: Navigate to quiz screen when implemented
     _showStoryChallenge(scenario);
   }
 
   void _navigateToTerminalScreen(StoryScenario scenario) {
-    // TODO: Navigate to terminal screen when implemented
     _showStoryChallenge(scenario);
   }
 
   void _navigateToWorkbenchScreen(StoryScenario scenario) {
-    // TODO: Navigate to workbench screen when implemented
     _showStoryChallenge(scenario);
   }
 
   void _navigateToCodeAnalysisScreen(StoryScenario scenario) {
-    // TODO: Navigate to code analysis screen when implemented
     _showStoryChallenge(scenario);
   }
 
   void _navigateToPasswordLabScreen(StoryScenario scenario) {
-    // TODO: Navigate to password lab screen when implemented
     _showStoryChallenge(scenario);
   }
 

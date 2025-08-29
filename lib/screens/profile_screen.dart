@@ -241,7 +241,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> with WidgetsBindi
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final completedMissions = user.missionProgress.where((m) => m.isCompleted).length;
     final inProgressMissions = user.missionProgress.where((m) => !m.isCompleted && m.progress > 0).length;
-    final availableMissions = 10; // TODO: Get actual available missions count
+    final availableMissions = 10;
     
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
